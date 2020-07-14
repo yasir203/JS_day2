@@ -1,1 +1,1 @@
-# JS_day2
+# LetsUpgrade Javascript
