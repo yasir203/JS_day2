@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Write the difference between var, let and const with code examples -->
+<!-- var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped.
+It can be said that a variable declared with var is defined throughout the program as compared to let.
+An example will clarify the difference even better
+
+CONST
+ES2015 (ES6) introduced const keyword to define a new variable. The difference in const variable declaration than others is that it cannot be reassigned.
+
+Properties:
+
+Cannot be reassigned.
+Block Scope
+It can be assign on the variable on declaration line.
+Primitive value.
+The property of a const object can be change but it cannot be change to reference to the new object
+The values inside the const array can be change, it can add new items to const arrays but it cannot reference to a new array.
+Re-declaring of a const variable inside different block scope is allowed.
+Cannot be Hoisted.
+Create only read only reference to value.
+-->
+<title>var, let and const </title>
+<body>
+    <script>
+        //var
+        console.log(x);
+        var x=5;
+        console.log(x);
+    </script>
+    <script>
+        //let
+        console.log(x);
+        let x=5;
+        console.log(x);
+    </script>
+
+    <script>
+        //const
+        const x = 12; 
+        x = 13; 
+        x += 1; 
+    </script>
+</body>

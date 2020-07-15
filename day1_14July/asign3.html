@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Data types basically specify what kind of data can be stored and manipulated within a program.
+
+There are six basic data types in JavaScript which can be divided into three main categories: primitive (or primary), composite (or reference), and special data types.
+String, Number, and Boolean are primitive data types.
+Object, Array, and Function (which are all types of objects) are composite data types.
+Whereas Undefined and Null are special data types.
+
+Primitive data types can hold only one value at a time, whereas composite data types can hold collections of values and more complex entities. -->
+<title>
+    data types in js
+</title>
+<body>
+    <script>
+        // Numbers
+        typeof 15;  // Returns: "number"
+        typeof 42.7;  // Returns: "number"
+        typeof 2.5e-4;  // Returns: "number"
+        typeof Infinity;  // Returns: "number"
+        typeof NaN;  // Returns: "number". Despite being "Not-A-Number"
+        
+        // Strings
+        typeof '';  // Returns: "string"
+        typeof 'hello';  // Returns: "string"
+        typeof '12';  // Returns: "string". Number within quotes is typeof string
+        
+        // Booleans
+        typeof true;  // Returns: "boolean"
+        typeof false;  // Returns: "boolean"
+        
+        // Undefined
+        typeof undefined;  // Returns: "undefined"
+        typeof undeclaredVariable; // Returns: "undefined"
+        
+        // Null
+        typeof Null;  // Returns: "object"
+        
+        // Objects
+        typeof {name: "John", age: 18};  // Returns: "object"
+        
+        // Arrays
+        typeof [1, 2, 4];  // Returns: "object"
+        
+        // Functions
+        typeof function(){};  // Returns: "function"
+    </script>
+</body>
