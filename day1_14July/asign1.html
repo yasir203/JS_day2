@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- A Web console is a tool which is mainly used to log information associated with a web page like: network requests, javascript, security errors, warnings, CSS etc. It enables us to interact with a web page by executing javascript expression in the contents of the page.
+
+Console object
+
+In javascript, the console is an object which provides access to the browser debugging console. The console object provides us with several different methods, like :
+
+log()
+error()
+warn()
+clear()
+time() and timeEnd()
+table()
+count()
+group() and groupEnd()
+custom console logs -->
+<title>consol explporation</title>
+<body>
+    <script>
+        //cosole.log()
+        console.log('abc'); 
+        console.log(1); 
+        console.log(true); 
+        console.log(null); 
+        console.log(undefined); 
+        console.log([1, 2, 3, 4]); // array inside log 
+        console.log({a:1, b:2, c:3}); // object inside log 
+    </script>
+
+    <script>
+        //console.error()
+        console.error('This is a simple error'); 
+    </script>
+
+    <script>
+        // console.warn() method 
+        console.warn('This is a warning.'); 
+    </script>
+
+    <script>
+        // console.time() and console.timeEnd()  
+        console.time('abc'); 
+        let fun = function(){ 
+            console.log('fun is running'); 
+        } 
+        let fun2 = function(){ 
+            console.log('fun2 is running..'); 
+        } 
+        fun();  
+        fun2(); 
+        console.timeEnd('abc'); 
+    </script>
+
+    <script>
+        //console.clear(); 
+    </script>
+</body>
