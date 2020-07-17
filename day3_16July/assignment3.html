@@ -1,0 +1,42 @@
+<html>
+<title>Grade and result</title>
+<body>
+Enter Marks out of 100
+<form method="get">
+          Input: <input type="number"  id="fname">
+          <input type="button" value="Enter" onClick="usrip()"></br>
+          <span id="result"></span>
+</form>
+<script>
+function usrip() {
+    var num =   document.getElementById('fname').value;
+
+            if (num >= 90){
+                document.getElementById('result').innerHTML = "Marks are " + num + "  and grade is A ";
+                console.log("Marks are " + num + "  and grade is A ");
+            }
+            else if (num >= 80 && num <= 89){
+                document.getElementById('result').innerHTML = "Marks are " + num + "  and grade is B ";
+                console.log("Marks are " + num + "  and grade is B ");
+              }
+            else if (num >= 70 && num <= 79){
+                document.getElementById('result').innerHTML = "Marks are " + num + "  and grade is C ";
+                console.log("Marks are " + num + "  and grade is C ");
+            }
+            else if(num >= 60 && num <= 69){
+                document.getElementById('result').innerHTML = "Marks are " + num + "  and grade is D ";
+                console.log("Marks are " + num + "  and grade is D ");
+            }
+            else if(num >= 50 && num <= 59){
+                document.getElementById('result').innerHTML = "Marks are " + num + "  and grade is E ";
+                console.log("Marks are " + num + "  and grade is E ");
+            }
+            else {
+                document.getElementById('result').innerHTML = "Marks are " + num + "  and grade is F";
+                console.log("Marks are " + num + "  and grade is F ");
+            }
+}  
+ 
+</script>
+</body>
+</html>
