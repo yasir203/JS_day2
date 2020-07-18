@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>replacing function</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        let ask = (question,yes,no) => {
+            if(confirm(question))
+            yes();
+            else
+            no();
+        }
+        ask(
+            "do you agree?",
+            () => alert("you agreed."),
+            () => alert("you didn't agree")
+        );
+    </script>
+</body>
+</html>
