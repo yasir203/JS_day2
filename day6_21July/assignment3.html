@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>user | clock</title>
+        <style>
+            .darkMode {
+                background-color: black;
+                color: white;
+            }
+            h3{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body id="bodyBg">
+        <h3 id="h3Name"></h3>
+        <h3 id="Clock"></h3>
+        <button onclick="darkFunction()">Toggle dark mode</button>
+        <h3 id="ptable"></h3>
+        <script>
+            let userName =prompt("Enter your name:-"); 
+            let bodyBg=document.getElementById('bodyBg');   
+            let h3Name=document.getElementById('h3Name');
+            let h3Clock=document.getElementById('Clock');
+            let btn=document.getElementById('btn');
+
+            h3Name.innerText=`welcome ${userName}`;
+
+            function clock(){
+                let date=new Date();
+                let time=date.toLocaleTimeString();
+                h3Clock.innerText=time;
+            }
+            function darkFunction() {
+                var element = document.body;
+                element.classList.toggle("darkMode");
+            }
+            setInterval(clock,1000)  
+        </Script>
+    </body>
+</html>
